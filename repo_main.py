@@ -135,7 +135,7 @@ if pressed:
 else:
     alpha_show=0
 if alpha_show==1:
-    st.table(list_front)
+    list_front
 
 left_column, right_column = st.columns(2)
 pressed = right_column.button('Esconder tabela')
