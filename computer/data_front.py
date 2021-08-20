@@ -12,6 +12,23 @@ import streamlit as st
 lista_resul=reorder_columns(tab_quartil,"Risco",1)
 lista_resul=lista_resul.iloc[:,0:2]
 
+#lista resul com medalhas
+list_front=lista_resul.copy()
+col_front="Risco"
+for i in range(len(list_front[col_front])):
+    aux_front=list_front.loc[i,col_front]
+    if aux_front=='Risco alto':
+        list_front.loc[i,col_front]='🔥'+''+aux_front
+    elif aux_front=='Risco médio alto':
+        list_front.loc[i,col_front]='⚠️'+''+aux_front
+    elif aux_front=='Risco médio baixo':
+        list_front.loc[i,col_front]='🥈'+''+aux_front
+    else:
+        list_front.loc[i,col_front]='🥇'+''+aux_front
+
+
+
+
 
 # Total de escolas analisadas (CARD)
 total_escolas=tab_quartil["namespace"].tolist()
