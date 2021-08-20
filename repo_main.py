@@ -72,7 +72,7 @@ dados de  **01/01/2021 até 15/08/2021**.
 """
 
 """
-### 👩🏽‍🏫 Metodoliga
+### 👩🏽‍🏫 Metodologia
 Com os dados, criamos métricas que tentam parametrizar o uso de uma funcionalidade da escola,
 Exemplo: Número de PDFS/total de conteúdos, ou Número de vizualização de relátorios/n° de professores ativos.
 Obtendo todas as métricas, fazemos a soma destas e normalizamos os dados. Após a normalização
